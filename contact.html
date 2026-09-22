@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Contact HomeGoods by phone, WhatsApp or enquiry form."
+    />
+    <meta name="theme-color" content="#012e67" />
+    <title>Contact | HomeGoods</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Normalize loads before the site stylesheet so browser defaults are predictable. -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="index.html" aria-label="HomeGoods home">
+        <span class="brand__mark" aria-hidden="true">🛒</span>
+        <span class="brand__name">Home<span>Goods</span></span>
+      </a>
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-label="Open menu"
+        aria-controls="primary-nav"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="primary-nav" aria-label="Primary navigation">
+        <a class="" href="index.html">Home</a>
+        <a class="" href="products.html">Products</a>
+        <a class="" href="plans.html">Payment Plan</a>
+        <a class="" href="about.html">About</a>
+        <a class="is-active" href="contact.html">Contact</a>
+        <a
+          class="nav-cta"
+          href="https://wa.me/263774923686?text=Hello%20HomeGoods%2C%20I%27d%20like%20help%20with%20the%202026%20catalogue."
+          target="_blank"
+          rel="noopener"
+          >WhatsApp us</a
+        >
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero page-hero--compact">
+        <div class="container page-hero__inner">
+          <div>
+            <p class="eyebrow">Contact HomeGoods</p>
+            <h1>Let's help you find what you need.</h1>
+            <p>
+              Ask about a product, its monthly payment, the 24-month plan or
+              what to bring when you apply.
+            </p>
+          </div>
+          <div class="contact-icon">✦</div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-grid">
+          <div class="contact-card">
+            <p class="eyebrow">Send an enquiry</p>
+            <h2>Tell us what you're looking for.</h2>
+            <form class="contact-form" data-contact-form>
+              <label for="name"
+                >Your name<input
+                  id="name"
+                  name="name"
+                  autocomplete="name"
+                  required
+              /></label>
+              <label for="phone"
+                >Phone number<input
+                  id="phone"
+                  name="phone"
+                  type="tel"
+                  autocomplete="tel"
+                  required
+              /></label>
+              <label for="interest"
+                >What can we help with?
+                <select id="interest" name="interest">
+                  <option>Product enquiry</option>
+                  <option>24-month payment plan</option>
+                  <option>How to apply</option>
+                  <option>General question</option>
+                </select>
+              </label>
+              <label for="message"
+                >Your message<textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="e.g. I'm interested in the Galaxy A16..."
+                  required
+                ></textarea>
+              </label>
+              <button class="button button--primary button--full" type="submit">
+                Prepare WhatsApp enquiry
+              </button>
+              <small
+                >Your message will be prepared for WhatsApp; review it before
+                sending.</small
+              >
+            </form>
+          </div>
+          <aside class="contact-info">
+            <div class="info-card">
+              <span>☎</span>
+              <div>
+                <strong>Call / WhatsApp</strong
+                ><a href="tel:+263774923686">+263 77 492 3686</a>
+              </div>
+            </div>
+            <div class="info-card">
+              <span>⌖</span>
+              <div>
+                <strong>Visit us</strong>
+                <p>
+                  Salamat Heights Mall<br />Office 5, 1st Floor<br />Corner 9th
+                  and George Silundika
+                </p>
+              </div>
+            </div>
+            <div class="info-card">
+              <span>✓</span>
+              <div>
+                <strong>Application reminder</strong>
+                <p>
+                  Civil servants only. Bring your ID and a payslip 3 months or
+                  less.
+                </p>
+              </div>
+            </div>
+            <a
+              class="button button--navy button--full"
+              href="https://wa.me/263774923686"
+              target="_blank"
+              rel="noopener"
+              >Open WhatsApp directly</a
+            >
+          </aside>
+        </div>
+      </section>
+
+      <section class="section section--soft">
+        <div class="container section-heading">
+          <div>
+            <p class="eyebrow">Find your next step</p>
+            <h2>Prefer to browse first?</h2>
+          </div>
+          <p>
+            Start with the product catalogue and use the monthly payment to
+            narrow down your options.
+          </p>
+        </div>
+        <div class="container contact-links">
+          <a href="products.html"
+            ><span>01</span><strong>Browse products</strong
+            ><small>See the complete 2026 range.</small>→</a
+          >
+          <a href="plans.html"
+            ><span>02</span><strong>Understand the plan</strong
+            ><small>See the 24-month structure.</small>→</a
+          >
+          <a href="about.html"
+            ><span>03</span><strong>About HomeGoods</strong
+            ><small>Read the catalogue-backed promise.</small>→</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer__main">
+        <div>
+          <a class="brand brand--footer" href="index.html"
+            ><span class="brand__mark">🛒</span
+            ><span class="brand__name">Home<span>Goods</span></span></a
+          >
+          <p>Quality products. Flexible payments. Reliable service.</p>
+        </div>
+        <div class="footer__links">
+          <div>
+            <strong>Explore</strong><a href="products.html">Products</a
+            ><a href="plans.html">Payment Plan</a><a href="about.html">About</a>
+          </div>
+          <div>
+            <strong>Help</strong><a href="contact.html">Contact</a
+            ><a href="https://wa.me/263774923686" target="_blank" rel="noopener"
+              >WhatsApp</a
+            ><a href="tel:+263774923686">Call</a>
+          </div>
+        </div>
+        <form class="newsletter" data-newsletter>
+          <strong>Stay in the loop</strong>
+          <label for="newsletter-email">Get catalogue updates</label>
+          <div class="newsletter__row">
+            <input
+              id="newsletter-email"
+              name="email"
+              type="email"
+              placeholder="Your email"
+              required
+            /><button class="button button--primary" type="submit">Join</button>
+          </div>
+        </form>
+      </div>
+      <div class="footer__bottom">
+        <span>2026 HomeGoods Catalogue</span>
+        <span
+          >Salamat Heights Mall, Office 5, 1st Floor · Corner 9th &amp; George
+          Silundika</span
+        >
+      </div>
+    </footer>
+
+    <div class="toast" role="status" aria-live="polite" data-toast></div>
+    <script type="module" src="scripts/app.js"></script>
+  </body>
+</html>

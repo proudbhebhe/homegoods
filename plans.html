@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Understand HomeGoods' 24-month credit plan and application requirements."
+    />
+    <meta name="theme-color" content="#012e67" />
+    <title>Payment Plan | HomeGoods</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Normalize loads before the site stylesheet so browser defaults are predictable. -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="index.html" aria-label="HomeGoods home">
+        <span class="brand__mark" aria-hidden="true">🛒</span>
+        <span class="brand__name">Home<span>Goods</span></span>
+      </a>
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-label="Open menu"
+        aria-controls="primary-nav"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="primary-nav" aria-label="Primary navigation">
+        <a class="" href="index.html">Home</a>
+        <a class="" href="products.html">Products</a>
+        <a class="is-active" href="plans.html">Payment Plan</a>
+        <a class="" href="about.html">About</a>
+        <a class="" href="contact.html">Contact</a>
+        <a
+          class="nav-cta"
+          href="https://wa.me/263774923686?text=Hello%20HomeGoods%2C%20I%27d%20like%20help%20with%20the%202026%20catalogue."
+          target="_blank"
+          rel="noopener"
+          >WhatsApp us</a
+        >
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero page-hero--compact">
+        <div class="container page-hero__inner">
+          <div>
+            <p class="eyebrow">Payment plan</p>
+            <h1>Know the commitment. Choose with confidence.</h1>
+            <p>
+              The catalogue presents one core payment structure: all listed
+              items are available on 24-month credit.
+            </p>
+          </div>
+          <div class="plan-badge">
+            <strong>24</strong><span>months</span><small>payment plan</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="plan-card plan-card--featured reveal">
+            <div>
+              <p class="eyebrow">Catalogue payment option</p>
+              <h2>24-month credit</h2>
+              <p>
+                Monthly payments vary by product. Select a product on the
+                catalogue page to see its advertised monthly amount.
+              </p>
+            </div>
+            <div class="plan-card__number">
+              <strong>24</strong><span>monthly payments</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--soft">
+        <div class="container section-heading">
+          <div>
+            <p class="eyebrow">Payment examples</p>
+            <h2>See how monthly amounts add up.</h2>
+          </div>
+          <p>
+            This calculator is a simple arithmetic guide using the advertised
+            monthly amount × 24. It is not an independent quote or financing
+            approval.
+          </p>
+        </div>
+        <div class="container calculator-layout">
+          <div class="calculator-card">
+            <label for="monthly-plan">Monthly payment</label>
+            <div class="money-input">
+              <span>$</span
+              ><input
+                id="monthly-plan"
+                type="number"
+                min="0"
+                step="0.01"
+                value="25"
+                data-plan-monthly
+              />
+            </div>
+            <div class="calc-total">
+              <span>24-month total</span
+              ><strong data-plan-total>$600.00</strong>
+            </div>
+            <div class="calc-line">
+              <span>Monthly</span><b data-plan-monthly-output>$25.00</b
+              ><span>×</span><b>24</b>
+            </div>
+            <a
+              class="button button--primary button--full"
+              data-plan-whatsapp
+              href="#"
+              target="_blank"
+              rel="noopener"
+              >Ask about this amount</a
+            >
+          </div>
+          <div class="example-list">
+            <p class="eyebrow">Examples from the catalogue</p>
+            <button class="example-row" data-example="6.76">
+              <span>Sunking PRO 2 Solar Light</span><strong>$6.76/m</strong>
+            </button>
+            <button class="example-row" data-example="14.48">
+              <span>Itel Pop 8 / Redmi A5 / Kids Tablet</span
+              ><strong>$14.48/m</strong>
+            </button>
+            <button class="example-row" data-example="23.17">
+              <span>Galaxy A16 / Hisense 32 Inch Smart TV</span
+              ><strong>$23.17/m</strong>
+            </button>
+            <button class="example-row" data-example="42.47">
+              <span>Hisense 43 Inch Smart TV</span><strong>$42.47/m</strong>
+            </button>
+            <button class="example-row" data-example="65.64">
+              <span>Hisense 50 Inches Smart TV</span><strong>$65.64/m</strong>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container steps-section">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">How to apply</p>
+              <h2>A simple three-step journey.</h2>
+            </div>
+          </div>
+          <div class="steps-grid">
+            <article class="step-card">
+              <span>01</span>
+              <h3>Be a civil servant</h3>
+              <p>
+                The catalogue identifies civil servants as the eligible
+                audience.
+              </p>
+            </article>
+            <article class="step-card">
+              <span>02</span>
+              <h3>Bring your documents</h3>
+              <p>Bring your ID and a payslip that is 3 months or less.</p>
+            </article>
+            <article class="step-card">
+              <span>03</span>
+              <h3>Choose your item</h3>
+              <p>
+                Contact HomeGoods to continue with the product and 24-month
+                payment arrangement.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--dark">
+        <div class="container faq">
+          <div>
+            <p class="eyebrow">Questions before you apply?</p>
+            <h2>Clear answers first.</h2>
+          </div>
+          <div class="faq-list">
+            <details>
+              <summary>Who is the plan for?</summary>
+              <p>The supplied catalogue states: “Civil servants only.”</p>
+            </details>
+            <details>
+              <summary>How long is the payment plan?</summary>
+              <p>
+                The catalogue repeatedly states a 24-month payment plan and says
+                all listed items are available on 24-month credit.
+              </p>
+            </details>
+            <details>
+              <summary>What should I bring?</summary>
+              <p>
+                The “How to Apply” page lists an ID and a payslip that is 3
+                months or less.
+              </p>
+            </details>
+            <details>
+              <summary>
+                Can I see the monthly payment before contacting HomeGoods?
+              </summary>
+              <p>
+                Yes. The product catalogue shows the advertised monthly amount
+                for each listed product.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container cta-card">
+          <div>
+            <p class="eyebrow">Next step</p>
+            <h2>Found something you like?</h2>
+            <p>
+              Send HomeGoods the product name and they can guide you from
+              enquiry to collection.
+            </p>
+          </div>
+          <a
+            class="button button--primary"
+            href="https://wa.me/263774923686?text=Hello%20HomeGoods%2C%20I%27m%20interested%20in%20a%20product%20from%20the%202026%20catalogue."
+            target="_blank"
+            rel="noopener"
+            >WhatsApp HomeGoods</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer__main">
+        <div>
+          <a class="brand brand--footer" href="index.html"
+            ><span class="brand__mark">🛒</span
+            ><span class="brand__name">Home<span>Goods</span></span></a
+          >
+          <p>Quality products. Flexible payments. Reliable service.</p>
+        </div>
+        <div class="footer__links">
+          <div>
+            <strong>Explore</strong><a href="products.html">Products</a
+            ><a href="plans.html">Payment Plan</a><a href="about.html">About</a>
+          </div>
+          <div>
+            <strong>Help</strong><a href="contact.html">Contact</a
+            ><a href="https://wa.me/263774923686" target="_blank" rel="noopener"
+              >WhatsApp</a
+            ><a href="tel:+263774923686">Call</a>
+          </div>
+        </div>
+        <form class="newsletter" data-newsletter>
+          <strong>Stay in the loop</strong>
+          <label for="newsletter-email">Get catalogue updates</label>
+          <div class="newsletter__row">
+            <input
+              id="newsletter-email"
+              name="email"
+              type="email"
+              placeholder="Your email"
+              required
+            /><button class="button button--primary" type="submit">Join</button>
+          </div>
+        </form>
+      </div>
+      <div class="footer__bottom">
+        <span>2026 HomeGoods Catalogue</span>
+        <span
+          >Salamat Heights Mall, Office 5, 1st Floor · Corner 9th &amp; George
+          Silundika</span
+        >
+      </div>
+    </footer>
+
+    <div class="toast" role="status" aria-live="polite" data-toast></div>
+    <script type="module" src="scripts/app.js"></script>
+  </body>
+</html>

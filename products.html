@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Browse the complete HomeGoods 2026 catalogue by category and monthly payment."
+    />
+    <meta name="theme-color" content="#012e67" />
+    <title>Products | HomeGoods</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Normalize loads before the site stylesheet so browser defaults are predictable. -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="index.html" aria-label="HomeGoods home">
+        <span class="brand__mark" aria-hidden="true">🛒</span>
+        <span class="brand__name">Home<span>Goods</span></span>
+      </a>
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-label="Open menu"
+        aria-controls="primary-nav"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="primary-nav" aria-label="Primary navigation">
+        <a class="" href="index.html">Home</a>
+        <a class="is-active" href="products.html">Products</a>
+        <a class="" href="plans.html">Payment Plan</a>
+        <a class="" href="about.html">About</a>
+        <a class="" href="contact.html">Contact</a>
+        <a
+          class="nav-cta"
+          href="https://wa.me/263774923686?text=Hello%20HomeGoods%2C%20I%27d%20like%20help%20with%20the%202026%20catalogue."
+          target="_blank"
+          rel="noopener"
+          >WhatsApp us</a
+        >
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container page-hero__inner">
+          <div>
+            <p class="eyebrow">2026 catalogue</p>
+            <h1>Find something that fits your life.</h1>
+            <p>
+              Browse the full HomeGoods range with the monthly payment shown
+              clearly on every card.
+            </p>
+          </div>
+          <img src="assets/catalog-2.jpg" alt="" aria-hidden="true" />
+        </div>
+      </section>
+
+      <section class="section section--catalogue">
+        <div class="container">
+          <div class="catalogue-intro">
+            <div>
+              <p class="eyebrow">All products</p>
+              <h2>Browse by category</h2>
+            </div>
+            <p>
+              Every product below is presented as a 24-month payment option in
+              the supplied catalogue.
+            </p>
+          </div>
+          <div class="filter-bar" data-product-filters>
+            <div class="filter-tabs" data-category-tabs></div>
+            <div class="filter-controls">
+              <label class="search-field"
+                ><span aria-hidden="true">⌕</span
+                ><input
+                  type="search"
+                  data-search
+                  placeholder="Search products..."
+                  aria-label="Search products"
+              /></label>
+              <label class="select-field"
+                ><span>Sort</span
+                ><select data-sort>
+                  <option value="featured">Featured</option>
+                  <option value="low">Lowest monthly payment</option>
+                  <option value="high">Highest monthly payment</option>
+                  <option value="name">A–Z</option>
+                </select></label
+              >
+            </div>
+          </div>
+          <div class="product-grid" data-product-grid></div>
+          <div class="empty-state" data-empty hidden>
+            <strong>Nothing matched that search.</strong
+            ><span>Try another product name or category.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--blue">
+        <div class="container budget-panel">
+          <div>
+            <p class="eyebrow">Shop by budget</p>
+            <h2>Start with the monthly amount that feels comfortable.</h2>
+            <p>
+              Use the guide to discover products around your monthly budget,
+              then ask HomeGoods about availability and application.
+            </p>
+          </div>
+          <div class="budget-panel__controls">
+            <label for="budget">Monthly budget</label>
+            <div class="budget-input">
+              <span>$</span
+              ><input
+                id="budget"
+                type="number"
+                min="0"
+                step="0.01"
+                value="25"
+                data-budget
+              />
+            </div>
+            <p data-budget-result>Showing products at or below $25.00/month.</p>
+            <a
+              class="button button--light"
+              href="https://wa.me/263774923686?text=Hello%20HomeGoods%2C%20I%27m%20shopping%20around%20a%20monthly%20budget."
+              target="_blank"
+              rel="noopener"
+              >Ask about my budget</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer__main">
+        <div>
+          <a class="brand brand--footer" href="index.html"
+            ><span class="brand__mark">🛒</span
+            ><span class="brand__name">Home<span>Goods</span></span></a
+          >
+          <p>Quality products. Flexible payments. Reliable service.</p>
+        </div>
+        <div class="footer__links">
+          <div>
+            <strong>Explore</strong><a href="products.html">Products</a
+            ><a href="plans.html">Payment Plan</a><a href="about.html">About</a>
+          </div>
+          <div>
+            <strong>Help</strong><a href="contact.html">Contact</a
+            ><a href="https://wa.me/263774923686" target="_blank" rel="noopener"
+              >WhatsApp</a
+            ><a href="tel:+263774923686">Call</a>
+          </div>
+        </div>
+        <form class="newsletter" data-newsletter>
+          <strong>Stay in the loop</strong>
+          <label for="newsletter-email">Get catalogue updates</label>
+          <div class="newsletter__row">
+            <input
+              id="newsletter-email"
+              name="email"
+              type="email"
+              placeholder="Your email"
+              required
+            /><button class="button button--primary" type="submit">Join</button>
+          </div>
+        </form>
+      </div>
+      <div class="footer__bottom">
+        <span>2026 HomeGoods Catalogue</span>
+        <span
+          >Salamat Heights Mall, Office 5, 1st Floor · Corner 9th &amp; George
+          Silundika</span
+        >
+      </div>
+    </footer>
+
+    <div class="toast" role="status" aria-live="polite" data-toast></div>
+    <script type="module" src="scripts/app.js"></script>
+  </body>
+</html>
