@@ -172,7 +172,7 @@ export const PRODUCTS = [
     name: "Restapedic Double Bed",
     spec: "",
     monthly: 32.14,
-    page: 51,
+    page: 58,
   },
   {
     category: "Home Furniture",
@@ -448,9 +448,9 @@ export const CATEGORIES = [
 ];
 
 export function whatsappUrl(message) {
-  return `https://wa.me/263774923686?text=${encodeURIComponent(message)}`;
+  return `https://wa.me/263713756610?text=${encodeURIComponent(message)}`;
 }
 
 export function productMessage(product) {
-  return `Hello HomeGoods, I'm interested in ${product.name}${product.spec ? ` (${product.spec})` : ""} listed at $${product.monthly.toFixed(2)}/month for 24 months. Please tell me how to apply.`;
+  return `Hello HomeGoods, I'm interested in ${product.name}${product.spec ? ` (${product.spec})` : ""} Please tell me how to apply.`;
 }
