@@ -161,12 +161,13 @@ export const PRODUCTS = [
     page: 47,
   },
   {
-    category: "Home Furniture",
-    name: "Hisense 50 Inches Smart TV",
-    spec: "50-inch",
-    monthly: 65.64,
-    page: 51,
+    category: "Kitchen Appliances",
+    name: "Defy 30L Microwave",
+    spec: "",
+    monthly: 23.65,
+    page: 57,
   },
+  
   {
     category: "Home Furniture",
     name: "Restapedic Double Bed",
@@ -210,13 +211,6 @@ export const PRODUCTS = [
     page: 56,
   },
   {
-    category: "Home Furniture",
-    name: "Defy 30L Microwave",
-    spec: "",
-    monthly: 23.65,
-    page: 57,
-  },
-  {
     category: "Computers, Accessories & TVs",
     name: "Oraimo 27K Powerbank",
     spec: "",
@@ -257,6 +251,13 @@ export const PRODUCTS = [
     spec: "",
     monthly: 27.99,
     page: 66,
+  },
+  {
+    category: "Computers, Accessories & TVs",
+    name: "Hisense 50 Inches Smart TV",
+    spec: "50-inch",
+    monthly: 65.64,
+    page: 51,
   },
   {
     category: "Computers, Accessories & TVs",

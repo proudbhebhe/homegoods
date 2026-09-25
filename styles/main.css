@@ -144,8 +144,8 @@ p {
 }
 .button--outline-light {
   border-color: rgba(255, 255, 255, 0.45);
-  color: var(--color-white);
-  background: rgba(255, 255, 255, 0.05);
+  color: var(--color-blue);
+  background: rgba(255, 255, 255, 0.359);
 }
 .button--full {
   width: 100%;
@@ -245,15 +245,25 @@ p {
 }
 
 .hero {
-  color: var(--color-white);
-  background: linear-gradient(
+  position: absolute;
+  color: var(--color-blue);
+  top: 0;
+  left: 10%;
+  background-image: url("assets/hero.jpg");
+  /*background: linear-gradient(
     125deg,
     var(--color-navy),
     var(--color-navy-2) 55%,
     var(--color-blue)
-  );
+  );*/
+
   overflow: hidden;
 }
+main img{
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+;}
 .hero--home {
   padding: 4.5rem 0 5rem;
 }
@@ -282,6 +292,7 @@ p {
 .hero__proof {
   display: flex;
   gap: 1.5rem;
+  color: var(--color-blue);
   margin-top: 2rem;
   padding-top: 1.2rem;
   border-top: 1px solid rgba(255, 255, 255, 0.18);
@@ -295,8 +306,8 @@ p {
   font-size: 1.3rem;
 }
 .hero__proof span {
-  font-size: 0.7rem;
-  color: #b9cce2;
+  font-size: 0.9rem;
+  color: var(--color-navy-2);
 }
 .hero__visual {
   position: relative;
@@ -305,7 +316,7 @@ p {
 }
 .hero__visual img {
   width: 100%;
-  height: 500px;
+  height: 400px;
   object-fit: cover;
   object-position: top;
   border-radius: 28px;
@@ -370,7 +381,7 @@ p {
   border-radius: 10px;
   background: var(--color-soft-blue);
   color: var(--color-blue);
-  font-size: 0.65rem;
+  font-size: 0.9rem;
   font-weight: 900;
 }
 .trust-band strong,
@@ -378,10 +389,10 @@ p {
   display: block;
 }
 .trust-band strong {
-  font-size: 0.8rem;
+  font-size: 1.2rem;
 }
 .trust-band small {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   color: var(--color-muted);
 }
 
