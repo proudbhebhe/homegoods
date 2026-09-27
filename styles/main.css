@@ -737,6 +737,9 @@ main img{
   color: var(--color-muted);
   font-size: 0.55rem;
 }
+.phone{
+  width: 50px;
+}
 .product-card__ask {
   background: #f4faff;
   color: var(--color-navy);
