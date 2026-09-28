@@ -96,6 +96,7 @@ export const PRODUCTS = [
     spec: "128GB + 4GB",
     monthly: 23.17,
     page: 36,
+    bestSeller: true,
   },
   {
     category: "Phones & Tablets",
@@ -302,6 +303,7 @@ export const PRODUCTS = [
     spec: "",
     monthly: 34.94,
     page: 74,
+    bestSeller: true,
   },
   {
     category: "Fridges & Freezers",
@@ -409,6 +411,7 @@ export const PRODUCTS = [
     spec: "100Ah",
     monthly: 27.03,
     page: 92,
+    bestSeller: true,
   },
   {
     category: "Power & Batteries",
