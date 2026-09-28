@@ -1,0 +1,64 @@
+/* ================================
+   BEST SELLERS
+================================ */
+
+.best-sellers {
+  background: var(--color-soft-blue);
+  overflow: hidden;
+}
+
+.best-sellers__slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.best-sellers__track {
+  display: flex;
+  width: max-content;
+  gap: 1.5rem;
+
+  animation: bestSellersScroll 30s linear infinite;
+}
+
+/*
+ * Each card keeps its original width instead
+ * of shrinking to fit the screen.
+ */
+.best-sellers__track .product-card {
+  flex: 0 0 280px;
+}
+
+/*
+ * Move the track left by exactly half of its
+ * total content because the cards are duplicated.
+ */
+@keyframes bestSellersScroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-50% - 0.75rem));
+  }
+}
+
+.best-sellers__action {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.best-sellers__slider:hover .best-sellers__track {
+  animation-play-state: paused;
+}
+@media (max-width: 768px) {
+  .best-sellers__track {
+    gap: 1rem;
+    animation-duration: 25s;
+  }
+
+  .best-sellers__track .product-card {
+    flex: 0 0 250px;
+  }
+}

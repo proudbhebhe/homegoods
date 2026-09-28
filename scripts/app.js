@@ -3,6 +3,7 @@ import { initAnimations } from "./modules/animations.js";
 import { initProducts, initBudgetFilter } from "./modules/products.js";
 import { initPricing } from "./modules/pricing.js";
 import { initForms } from "./modules/forms.js";
+import { initBestSellers } from "./modules/bestSeller.js";
 
 /*
   One shared ES-module entry point is loaded by every page.
@@ -15,4 +16,5 @@ document.addEventListener("DOMContentLoaded", () => {
   initBudgetFilter();
   initPricing();
   initForms();
+  initBestSellers();
 });

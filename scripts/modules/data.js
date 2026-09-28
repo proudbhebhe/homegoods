@@ -181,6 +181,7 @@ export const PRODUCTS = [
     spec: "",
     monthly: 35.04,
     page: 52,
+    bestSeller: true,
   },
   {
     category: "Home Furniture",
@@ -272,6 +273,7 @@ export const PRODUCTS = [
     spec: "43-inch",
     monthly: 42.47,
     page: 68,
+    bestSeller: true,
   },
   {
     category: "Fridges & Freezers",
@@ -356,6 +358,7 @@ export const PRODUCTS = [
     spec: "",
     monthly: 60.81,
     page: 82,
+    bestSeller: true,
   },
  
   {
