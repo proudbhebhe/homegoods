@@ -334,7 +334,7 @@ export const PRODUCTS = [
     name: "Sunking PRO 2 Solar Light",
     spec: "",
     monthly: 6.76,
-    page: 81,
+    page: 88,
   },
   {
     category: "Solar Products",
@@ -345,18 +345,19 @@ export const PRODUCTS = [
   },
   {
     category: "Solar Products",
+    name: "Sunsynk Contour 2000",
+    spec: "AC 240V, USB ports, 5V-12V output",
+    monthly: 56.78,
+    page: 89,
+  },
+  {
+    category: "Solar Products",
     name: "1.5Kv Lithium Solar Generator",
     spec: "",
     monthly: 60.81,
     page: 82,
   },
-  {
-    category: "Solar Products",
-    name: "1.1Kv Gel Solar Generator",
-    spec: "",
-    monthly: 48.26,
-    page: 83,
-  },
+ 
   {
     category: "Solar Products",
     name: "Sunking Home Plus Pro",
@@ -386,11 +387,18 @@ export const PRODUCTS = [
     page: 87,
   },
   {
-    category: "Power & Batteries",
+    category: "Solar Products",
     name: "550 Watts S/Panel",
     spec: "",
     monthly: 27.03,
     page: 91,
+  },
+  {
+    category: "Power & Batteries",
+    name: "1.1Kv Gel Solar Generator",
+    spec: "",
+    monthly: 48.26,
+    page: 83,
   },
   {
     category: "Power & Batteries",

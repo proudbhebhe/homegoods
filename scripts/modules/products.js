@@ -11,6 +11,10 @@ function productCard(product) {
         <h3>${product.name}</h3>
         <div class="product-card__spec">${product.spec || "24-month payment plan"}</div>
         <div class="product-card__price">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
           <div class="phone"><a href="tel:+263774923686"><img src="assets/phone.webp" alt="phone logo"></a></div>
           
           <a class="product-card__ask" href="${whatsappUrl(productMessage(product))}" target="_blank" rel="noopener"><img src="assets/whatsapp-logo.png" alt="whatsapp logo"></a>

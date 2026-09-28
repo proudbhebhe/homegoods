@@ -246,7 +246,7 @@ p {
 
 .hero {
   position: absolute;
-  color: var(--color-blue);
+  color: var(--color-white);
   top: 0;
   left: 10%;
   background-image: url("assets/hero.jpg");
@@ -259,11 +259,12 @@ p {
 
   overflow: hidden;
 }
-main img{
+main .image{
   position: relative;
   width: 1200px;
   margin: 0 auto;
-;}
+  height: 400px;
+}
 .hero--home {
   padding: 4.5rem 0 5rem;
 }
@@ -307,7 +308,7 @@ main img{
 }
 .hero__proof span {
   font-size: 0.9rem;
-  color: var(--color-navy-2);
+  color: var(--color-white);
 }
 .hero__visual {
   position: relative;
@@ -1232,6 +1233,9 @@ main img{
 }
 
 @media (min-width: 769px) {
+  main .image{
+    height: 675px;
+  }
   .container {
     width: min(calc(100% - 3rem), var(--max-width));
   }
