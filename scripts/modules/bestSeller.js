@@ -25,7 +25,7 @@ function bestSellerCard(product) {
           <div></div>
           <div></div>
           <div></div>
-          <div class="phone"><a href="tel:+263774923686"><img src="assets/phone.webp" alt="phone logo"></a></div>
+          <div class="phone"><a href="https://www.facebook.com/61589948272688/${productMessage(product)}" target="_blank" rel="noopener"><img src="assets/facebook_icon.svg" alt="phone logo"></a></div>
           
           <a class="product-card__ask" href="${whatsappUrl(productMessage(product))}" target="_blank" rel="noopener"><img src="assets/whatsapp-logo.png" alt="whatsapp logo"></a>
         </div>

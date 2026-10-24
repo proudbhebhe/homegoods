@@ -261,9 +261,9 @@ p {
 }
 main .image{
   position: relative;
-  width: 1200px;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
-  height: 400px;
 }
 .hero--home {
   padding: 4.5rem 0 5rem;
@@ -1408,5 +1408,88 @@ main .image{
   }
   .site-footer {
     padding-inline: 2rem;
+  }
+  .corner{
+    display: none;
+  }
+  #call{
+    display: none;
+  }
+}
+.corner{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  bottom: 2%;
+  right: 2%;
+}
+.corner img{
+  width: 75px;
+  height: auto;
+  border-radius: 10px;
+}
+#call{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  bottom: 13%;
+  right: 2%;
+}
+
+.phone-ripple {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  isolation: isolate;
+}
+
+.phone-button {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #087fdb;
+  color: white;
+}
+
+/* Two expanding ripple circles */
+#call::before,
+#call::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 2px solid #087fdb;
+  border-radius: 50%;
+  animation: phone-pulse 2s ease-out infinite;
+  pointer-events: none;
+  z-index: 0;
+}
+
+#call::after {
+  animation-delay: 1s;
+}
+
+@keyframes phone-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  #call::before,
+  #call::after {
+    animation: none;
   }
 }
