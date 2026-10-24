@@ -47,6 +47,5 @@ export function initBestSellers() {
     .map(bestSellerCard)
     .join("");
 
-  const isTouchDevice = window.matchMedia("(pointer: coarse)").matches;
-  track.innerHTML = isTouchDevice ? cards : cards + cards;
+  track.innerHTML = cards + cards;
 };

@@ -63,8 +63,7 @@
   }
 
   .best-sellers__track {
-    animation: none;
-    transform: none;
+    width: max-content;
   }
 
   .best-sellers__track .product-card {
