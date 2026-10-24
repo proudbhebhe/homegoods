@@ -47,9 +47,6 @@ export function initBestSellers() {
     .map(bestSellerCard)
     .join("");
 
-  /*
-   * We duplicate the cards so the animation can
-   * move continuously without a visible jump.
-   */
-  track.innerHTML = cards + cards;
+  const isTouchDevice = window.matchMedia("(pointer: coarse)").matches;
+  track.innerHTML = isTouchDevice ? cards : cards + cards;
 };
