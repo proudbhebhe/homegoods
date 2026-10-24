@@ -1233,9 +1233,6 @@ main .image{
 }
 
 @media (min-width: 769px) {
-  main .image{
-    height: 675px;
-  }
   .container {
     width: min(calc(100% - 3rem), var(--max-width));
   }
