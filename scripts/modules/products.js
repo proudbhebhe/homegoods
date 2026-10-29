@@ -9,7 +9,7 @@ function productCard(product) {
       </div>
       <div class="product-card__body">
         <h3>${product.name}</h3>
-        <div class="product-card__spec">${product.spec || "24-month payment plan"}</div>
+        <div class="product-card__spec">${product.spec || "Up to 12-month payment plan"}</div>
         <div class="product-card__price">
           <div></div>
           <div></div>

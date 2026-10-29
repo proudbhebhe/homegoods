@@ -9,10 +9,10 @@ export function initPricing() {
 
   const update = () => {
     const monthly = Math.max(0, Number(input.value) || 0);
-    output.textContent = `$${(monthly * 24).toFixed(2)}`;
+    output.textContent = `$${(monthly * 12).toFixed(2)}`;
     monthlyOutput.textContent = `$${monthly.toFixed(2)}`;
     whatsapp.href = whatsappUrl(
-      `Hello HomeGoods, my monthly budget is around $${monthly.toFixed(2)}. Please show me products available on the 24-month payment plan around this amount.`
+      `Hello HomeGoods, my monthly budget is around $${monthly.toFixed(2)}. Please show me products available on a payment plan of up to 12 months around this amount.`
     );
   };
 

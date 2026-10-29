@@ -5,7 +5,7 @@ Multi-page, mobile-first HTML/CSS/JavaScript implementation based on the supplie
 ## Architecture
 - `index.html` — Home
 - `products.html` — full catalogue with search, filtering and sorting
-- `plans.html` — 24-month plan, examples, calculator, FAQ and application flow
+- `plans.html` — payment plan of up to 12 months, examples, calculator, FAQ and application flow
 - `about.html` — catalogue-backed brand story and trust promises
 - `contact.html` — enquiry form, WhatsApp and location
 - `styles/main.css` — one shared custom stylesheet
