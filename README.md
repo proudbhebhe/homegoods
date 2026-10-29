@@ -18,4 +18,4 @@ Multi-page, mobile-first HTML/CSS/JavaScript implementation based on the supplie
 The PDF is image-based, so the product information was transcribed from the visible catalogue pages. No customer testimonials, social accounts, email address, or additional payment tiers were invented where the catalogue did not provide them.
 
 ## Before production
-Verify all product names, monthly prices, stock/availability, eligibility rules, legal financing language, and contact details with HomeGoods. Replace the demo newsletter behavior with a real endpoint if one is available.
+Verify all product names, monthly prices, stock/availability, eligibility rules, legal financing language, and contact details with HomeGoods.

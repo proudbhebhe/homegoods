@@ -10,7 +10,6 @@ function showToast(message) {
 
 export function initForms() {
   const contact = document.querySelector("[data-contact-form]");
-  const newsletter = document.querySelector("[data-newsletter]");
 
   if (contact) {
     contact.addEventListener("submit", event => {
@@ -29,11 +28,4 @@ export function initForms() {
     });
   }
 
-  if (newsletter) {
-    newsletter.addEventListener("submit", event => {
-      event.preventDefault();
-      showToast("Thanks — you're on the HomeGoods update list.");
-      newsletter.reset();
-    });
-  }
 }

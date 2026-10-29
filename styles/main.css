@@ -148,6 +148,7 @@ p {
   background: rgba(255, 255, 255, 0.359);
 }
 .button--full {
+  box-sizing: border-box;
   width: 100%;
 }
 .text-link {
@@ -1031,6 +1032,7 @@ main .image{
 .contact-form input,
 .contact-form select,
 .contact-form textarea {
+  box-sizing: border-box;
   display: block;
   width: 100%;
   margin-top: 0.4rem;
@@ -1163,8 +1165,7 @@ main .image{
   flex-direction: column;
   gap: 0.45rem;
 }
-.footer__links strong,
-.newsletter strong {
+.footer__links strong {
   color: white;
   font-size: 0.75rem;
 }
@@ -1173,29 +1174,6 @@ main .image{
 }
 .footer__links a:hover {
   color: white;
-}
-.newsletter {
-  display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
-}
-.newsletter label {
-  font-size: 0.65rem;
-}
-.newsletter__row {
-  display: flex;
-}
-.newsletter input {
-  min-width: 0;
-  flex: 1;
-  border: 0;
-  border-radius: 9px 0 0 9px;
-  padding: 0.7rem;
-  font-size: 0.7rem;
-}
-.newsletter button {
-  border-radius: 0 9px 9px 0;
-  padding: 0.7rem 0.8rem;
 }
 .footer__bottom {
   width: min(calc(100% - 0rem), var(--max-width));
@@ -1389,7 +1367,7 @@ main .image{
     grid-template-columns: repeat(3, 1fr);
   }
   .footer__main {
-    grid-template-columns: 1.1fr 0.8fr 1fr;
+    grid-template-columns: 1.1fr 0.8fr;
     align-items: start;
   }
   .footer__bottom {
